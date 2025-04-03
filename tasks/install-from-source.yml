@@ -62,5 +62,4 @@
     - install
   when: (git_installed_version.rc != 0) or (git_reinstall_from_source | bool)
   become: true
-  changed_when: false  # Evita que siempre se marque como cambiado
-
+  changed_when: false
