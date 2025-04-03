@@ -39,7 +39,7 @@ jobs:
         run: pip3 install yamllint
       - name: Lint code.
         run: |
-          yamllint .
+          yamllint -c .yamllint .
   molecule:
     name: Molecule
     runs-on: ubuntu-latest
